@@ -38,7 +38,8 @@ h1 {
 
 .video-div video {
     border-radius: 8px;
-
+    height: 80vh;
+    width: 100%;
 }
 
 .select-div {
@@ -94,5 +95,8 @@ h1 {
 @media (max-width: 992px) {
     .video-div {
         padding: 18px 12px 12px 12px;
+    }
+    .video-div video{
+        height: auto;
     }
 }
