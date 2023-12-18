@@ -7,7 +7,7 @@
     <title>Exceed Camp</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +18,7 @@
         <h1>Winter <span class="primary-color">Camps</span></h1>
         <div class="video-div">
             <h4>Discover our Winter camps</h4>
-            <video class="m-0" src="camp-video.mp4" autoplay></video>
+            <video id="campVideo" class="m-0" src="camp-video.mp4" loop></video>
             <!-- <div class="d-none d-lg-block">
                 <p class="gray">Join us at Exceed Robotics for an enriching winter break experience with our STEM Winter
                     Camps. Our
@@ -76,7 +76,8 @@
                         <h5 class="mb-3">Robo-Trek</h5>
                         <p class="mb-1 gray">Age: 7-8</p>
                     </div>
-                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png" alt=""></i></button>
+                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png"
+                            alt=""></i></button>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -86,7 +87,8 @@
                         <h5 class="mb-3">Arduino Smarthouse</h5>
                         <p class="mb-1 gray">Age: 9-11</p>
                     </div>
-                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png" alt=""></i></button>
+                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png"
+                            alt=""></i></button>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-1 ">
@@ -96,7 +98,8 @@
                         <h5 class="mb-3">Bionic Finger</h5>
                         <p class="mb-1 gray">Age: 9-11</p>
                     </div>
-                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png" alt=""></i></button>
+                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png"
+                            alt=""></i></button>
                 </div>
             </div>
         </div>
@@ -108,7 +111,8 @@
                         <h5 class="mb-3">Hand Crank Flashlight</h5>
                         <p class="mb-1 gray">Age: 9-11</p>
                     </div>
-                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png" alt=""></i></button>
+                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png"
+                            alt=""></i></button>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -118,16 +122,24 @@
                         <h5 class="mb-3">ARTbot</h5>
                         <p class="mb-1 gray">Age: 12-15</p>
                     </div>
-                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png" alt=""></i></button>
+                    <button class="border-0 w-100">View Camp <img class="ps-3" src="images/Vector.png"
+                            alt=""></i></button>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script>
+        const video = document.getElementById('campVideo');
+        video.autoplay = true;
+        video.load();
+    </script>
+
 </body>
 
 </html>
